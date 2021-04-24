@@ -154,7 +154,7 @@ def partition_labeled_data(data, labels):
         # obtain desired samples
         data_this_class = data[this_class_idx, :]
         labels_this_class = [0] * len(this_class_idx)
-
+        print(other_classes_idx)
         data_other_classes = data[other_classes_idx, :]
         labels_other_classes = [1] * len(other_classes_idx)
 
