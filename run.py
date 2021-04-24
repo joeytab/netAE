@@ -25,7 +25,7 @@ parser.add_argument("-spath", "--save-path", default="output", help="path to out
 parser.add_argument("-mc", "--model-code", default="full", help="code name of the current model (default: full)")
 parser.add_argument("-ds", "--dataset", default="cortex", help="name of the dataset (default: cortex)")
 parser.add_argument("-sl", "--silence", action="store_true", default=False, help="do not print any stats during training")
-parser.add_argument("-se", "--save-embd", type=bool_flag, default=True, help="saves the embedded space along with the model")
+parser.add_argument("-se", "--save-embd", type=bool, default=True, help="saves the embedded space along with the model")
 
 # Model property:
 parser.add_argument("--ae", default="vdca", help="specify autoencoder structure (dae, vae, dca, or vdca)")
