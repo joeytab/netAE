@@ -16,6 +16,7 @@ same network architecture (i.e. the `AE` baseline in the paper).
 @contact: leozdong@stanford.edu
 @date: 10/16/2019
 """
+import argparse
 
 parser = argparse.ArgumentParser(description="Training netAE")
 # Training settings:
