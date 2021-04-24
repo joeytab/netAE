@@ -86,21 +86,6 @@ def train_netAE(all_data, labeled_data, labeled_lab, save_path, embd_save_path, 
     input_dim = all_data.size()[1]
     n_classes = len(set(labeled_lab))
 
-#     if args.ae == "dae":
-#         netAE = Dae(encoding_dim, input_dim, n_classes, lambd=lambd, phi=phi, gamma=gamma)
-#         print("Training DAE...")
-#     elif args.ae == "vae":
-#         netAE = Vae(encoding_dim, input_dim, n_classes, lambd=lambd, phi=phi, kappa=kappa, gamma=gamma)
-#         print("Training VAE...")
-#     elif args.ae == "dca":
-#         netAE = Dca(encoding_dim, input_dim, n_classes, lambd=lambd, phi=phi, gamma=gamma)
-#         print("Training DCA...")
-#     elif args.ae == "vdca":
-#         netAE = Vdca(encoding_dim, input_dim, n_classes, lambd=lambd, phi=phi, kappa=kappa, gamma=gamma)
-#         print("Training VDCA...")
-#     else:
-#         raise Exception("Incorrect autoencoder structure name passed to argument parser! Enter dae, vae, dca, or vcda.")
-
     netAE = Vae(encoding_dim, input_dim, n_classes, lambd=lambd, phi=phi, kappa=kappa, gamma=gamma)
     # put model and input to device
     netAE.to(device)
