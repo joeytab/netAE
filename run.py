@@ -20,7 +20,7 @@ import argparse
 
 parser = argparse.ArgumentParser(description="Training netAE")
 # Training settings:
-parser.add_argument("-dpath", "--data-path", default="/", help="path to the dataset folder")
+parser.add_argument("-dpath", "--data-path", default=".", help="path to the dataset folder")
 parser.add_argument("-spath", "--save-path", default="output", help="path to output directory")
 parser.add_argument("-mc", "--model-code", default="full", help="code name of the current model (default: full)")
 parser.add_argument("-ds", "--dataset", default="cortex", help="name of the dataset (default: cortex)")
