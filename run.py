@@ -17,6 +17,7 @@ same network architecture (i.e. the `AE` baseline in the paper).
 @date: 10/16/2019
 """
 import argparse
+import torch 
 
 parser = argparse.ArgumentParser(description="Training netAE")
 # Training settings:
