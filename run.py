@@ -65,7 +65,7 @@ def main():
 
     # Data loading
     from data import Data
-    prep_method = "log"
+    prep_method = None
 
     if args.lab_ratio != -1:  # use labeled ratio
         dataset = Data(args.data_path, labeled_ratio=args.lab_ratio, seed=args.seed, prep_method=prep_method)
