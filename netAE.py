@@ -80,7 +80,7 @@ def train_netAE(all_data, labeled_data, labeled_lab, save_path, embd_save_path, 
         early_stop = args.early_stop
 
     # print hyperparameters
-    print("params: {{lambda: {}, phi: {}, kappa: {}, gamma: {}, opt: {}, batch_size: {}, lr: {}, lr_decay: {}, encoding_dim: {}, epochs: {}, early_stop: {}}}".format(lambd, phi, kappa, gamma, optimizer, nbatches, lr, lr_decay, encoding_dim, epochs, early_stop))
+    print("params: {{lambda: {}, phi: {}, kappa: {}, gamma: {}, opt: {}, batch_size: {}, lr: {}, lr_decay: {}, encoding_dim: {}, epochs: {}, early_stop: {}}}".format(lambd, phi, kappa, gamma, optimizer, batch_size, lr, lr_decay, encoding_dim, epochs, early_stop))
 
     #### Define autoencoder structure ####
     input_dim = all_data.size()[1]
