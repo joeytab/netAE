@@ -264,7 +264,7 @@ def train_netAE(all_data, labeled_data, labeled_lab, save_path, embd_save_path, 
             break
 
         if args.lambd != 0 and args.phi != 0:  # early stopping for semi-supervised
-            if train_softmax_acc > 0.97:
+            if train_softmax_acc > 0.99:
                 print("early stopping (acc based) reached at: {}".format(epoch))
                 best_model_state_dict = netAE.state_dict()
                 best_epoch = epoch
