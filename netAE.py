@@ -258,7 +258,7 @@ def train_netAE(all_data, labeled_data, labeled_lab, save_path, embd_save_path, 
         # Early stopping:
         lookahead = len(smoothed_val_unsup_rec) - 1
         lookback = min(round(0.8 * lookahead), max(0, lookahead-2))
-        threshold = 2
+        threshold = 1
         if lookahead != lookback and smoothed_val_unsup_rec[lookback] - smoothed_val_unsup_rec[lookahead] < threshold:
             print("early stopping (unsup based) reached at: {}".format(lookahead))
             break
