@@ -84,7 +84,7 @@ def train_netAE(all_data, labeled_data, labeled_lab, save_path, embd_save_path, 
 
     #### Define autoencoder structure ####
     input_dim = all_data.size()[1]
-    n_classes = len(set(labeled_lab))
+    n_classes = len(set(labeled_lab)) + 1
 
     netAE = Vae(encoding_dim, input_dim, n_classes, lambd=lambd, phi=phi, kappa=kappa, gamma=gamma)
     # put model and input to device
