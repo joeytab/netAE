@@ -46,7 +46,7 @@ parser.add_argument("-ld", "--lambd", type=float, default=150, help="weight for 
 parser.add_argument("--phi", type=float, default=10, help="weight for logistic regression loss (default: 10)")
 
 parser.add_argument("-lsize", "--lab-size", type=int, default=10, help="labeled set size for each cell type (default: 10)")
-parser.add_argument("-lratio", "--lab-ratio", type=float, default=-1, help="labeled set ratio for each cell type (default: -1)")
+parser.add_argument("-lratio", "--lab-ratio", type=float, default=0.7, help="labeled set ratio for each cell type (default: 0.7)")
 
 args = parser.parse_args()
 
